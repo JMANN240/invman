@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.modal {
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.modal.visible {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-options {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1vmax;
+    padding: 1vmax;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.modal-options-row {
+    display: flex;
+    margin: 1vmax;
+    width: 50vw;
+}
+
+.modal-options-row > * {
+    flex-grow: 1;
+    font-size: large;
+}
+
+input[type='number'] {
+    width: 3ch;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>InvMan</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/base.css')}}">
+        <script defer src="{{url_for('static', filename='js/jquery-3.6.0.js')}}"></script>
+        <script defer src="{{url_for('static', filename='js/base.js')}}"></script>
+        {% block header %}{% endblock %}
+    </head>
+    <body>
+        <div id="site-header">
+            {% block head %}{% endblock %}
+        </div>
+        <div id="site-body">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>
